@@ -8,3 +8,8 @@ useDefault = true
 description = "Firebase web API key for yourmet-ee5dd (public by design)"
 targetRules = ["gcp-api-key", "generic-api-key"]
 regexes = ['''^AIzaSyAklJkZUasYYI-13Or8JIo_5I0zMkjc-NA$''']
+
+[[allowlists]]
+description = "Cloudflare Access AUD tag for the admin Worker (public: it appears in every Access login redirect)"
+targetRules = ["generic-api-key"]
+regexes = ['''^d58b1869a268a72976f77ee0758d7e54c2722ebbfedf6415500d53137f25499b$''']
