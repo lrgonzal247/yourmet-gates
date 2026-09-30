@@ -1,0 +1,10 @@
+# gitleaks config for Yourmet: the default rules, plus one exact allowance. The Firebase web API key is public by
+# design (it ships in every browser bundle and sits in config/public.json); only that exact value is allowed, and
+# only for the gcp-api-key and generic-api-key rules. Any other Google key still fails. Used by gates/gitleaks.mjs and by ci.yml.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Firebase web API key for yourmet-ee5dd (public by design)"
+targetRules = ["gcp-api-key", "generic-api-key"]
+regexes = ['''^AIzaSyAklJkZUasYYI-13Or8JIo_5I0zMkjc-NA$''']
