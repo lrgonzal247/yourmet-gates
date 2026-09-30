@@ -1,0 +1,7 @@
+{
+  "name": "yourmet-gates",
+  "private": true,
+  "type": "module",
+  "description": "Build gates for Yourmet, run by Workers Builds and CI at a pinned commit. No dependencies; Node 22+.",
+  "engines": { "node": ">=22" }
+}
